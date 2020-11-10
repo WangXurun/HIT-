@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="063c7cb9-ec07-4573-ab3f-eed9033e6f2d" name="Default Changelist" comment="" />
+    <list default="true" id="063c7cb9-ec07-4573-ab3f-eed9033e6f2d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4/PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/4/PCA.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,14 +34,33 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\学习文件\机器学习\lab\2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.kmeans_em (1)">
+  <component name="RunManager" selected="Python.PCA">
+    <configuration name="PCA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4/PCA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="lab" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,28 +149,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="logistic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="lab" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2/logistic.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="logistic_banknote (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lab" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.PCA" />
         <item itemvalue="Python.kmeans_em (1)" />
         <item itemvalue="Python.kmeans_em" />
         <item itemvalue="Python.util" />
         <item itemvalue="Python.kmeans_em" />
-        <item itemvalue="Python.logistic_banknote (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +231,8 @@
       <workItem from="1604758704556" duration="3264000" />
       <workItem from="1604811071980" duration="1480000" />
       <workItem from="1604832040795" duration="28932000" />
-      <workItem from="1604928328802" duration="1691000" />
+      <workItem from="1604928328802" duration="3537000" />
+      <workItem from="1605003459098" duration="11871000" />
     </task>
     <servers />
   </component>
@@ -254,60 +256,69 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603984267958" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1604865361051">
+    <state width="1493" height="252" key="GridCell.Tab.0.bottom" timestamp="1605016092807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604865361051" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1604865361051">
+    <state width="1493" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605016092807" />
+    <state width="1493" height="252" key="GridCell.Tab.0.center" timestamp="1605016092807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604865361051" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1604865361051">
+    <state width="1493" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605016092807" />
+    <state width="1493" height="252" key="GridCell.Tab.0.left" timestamp="1605016092807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604865361051" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1604865361051">
+    <state width="1493" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605016092807" />
+    <state width="1493" height="252" key="GridCell.Tab.0.right" timestamp="1605016092807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604865361051" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1604865361051">
+    <state width="1493" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605016092807" />
+    <state width="1493" height="252" key="GridCell.Tab.1.bottom" timestamp="1605016104885">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604865361051" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1604865361051">
+    <state width="1493" height="252" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605016104885" />
+    <state width="1493" height="252" key="GridCell.Tab.1.center" timestamp="1605016104885">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604865361051" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1604865361051">
+    <state width="1493" height="252" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605016104885" />
+    <state width="1493" height="252" key="GridCell.Tab.1.left" timestamp="1605016104885">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604865361051" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1604865361051">
+    <state width="1493" height="252" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605016104885" />
+    <state width="1493" height="252" key="GridCell.Tab.1.right" timestamp="1605016104885">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604865361051" />
-    <state x="270" y="54" key="SettingsEditor" timestamp="1602776995623">
+    <state width="1493" height="252" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605016104885" />
+    <state x="270" y="54" key="SettingsEditor" timestamp="1605004758198">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602776995623" />
+    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605004758198" />
     <state x="149" y="192" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1604591399903">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="149" y="192" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1536.824@0.0.1536.824" timestamp="1604591399903" />
-    <state x="406" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1604928351647">
+    <state x="404" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1605003459179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="406" y="219" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1604928351647" />
+    <state x="404" y="225" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1605003459179" />
     <state x="406" y="27" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604844374764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="406" y="27" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1604844374764" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603193822853">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605005731627">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603193822853" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605005731627" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/4/PCA.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="labels[i]" language="Python" />
@@ -318,6 +329,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lab$logistic.coverage" NAME="logistic Coverage Results" MODIFIED="1603543946287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2" />
     <SUITE FILE_PATH="coverage/lab$kmeans__1_.coverage" NAME="kmeans (1) Coverage Results" MODIFIED="1604854584390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3" />
+    <SUITE FILE_PATH="coverage/lab$PCA.coverage" NAME="PCA Coverage Results" MODIFIED="1605016092655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/4" />
     <SUITE FILE_PATH="coverage/lab$util.coverage" NAME="util Coverage Results" MODIFIED="1604854575268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/lab$kmeans_em__1_.coverage" NAME="kmeans_em (1) Coverage Results" MODIFIED="1604865355365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3" />
   </component>
