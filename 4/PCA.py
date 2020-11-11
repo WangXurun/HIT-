@@ -13,20 +13,19 @@ def PCA(X, k):
     if len(b) < len(S):
         b = b.tolist() + [0] * (len(S) - len(b))
     return b[:k], c[:k], mean
-    # u = u.T
-    # la = []
-    # u_ = []
-    # for i in range(k):
-    #     l = np.argmax(lambd)
-    #     u_.append(u[l].tolist())
-    #     la.append(lambd[l])
-    #     lambd = np.delete(lambd, l)
-    #     u = np.delete(u, l, axis=0)
-    # return la, u_, mean
 
 
+def psnr(img1, img2):
+    mse = np.mean((img1 / 255. - img2 / 255.) ** 2)
+    if mse < 1.0e-10:
+        return 100
+    PIXEL_MAX = 1
+    return 20 * np.log10(PIXEL_MAX / np.sqrt(mse))
+
+
+np.random.seed(2)
 alpha = np.pi / 6
-beta = np.pi / 3
+beta = np.pi / 5
 gamma = np.pi / 10
 A = [[1, 0, 0], [0, np.cos(alpha), np.sin(alpha)], [0, -np.sin(alpha), np.cos(alpha)]]
 B = [[np.cos(beta), 0, -np.sin(beta)], [0, 1, 1], [np.sin(beta), 0, np.cos(beta)]]
@@ -35,6 +34,8 @@ C = [[np.cos(gamma), np.sin(gamma), 0], [-np.sin(gamma), np.cos(gamma), 0], [0, 
 mu = [1, 1, 3]
 sigma = [[2, 0, 0], [0, 2, 0], [0, 0, 0.01]]
 X = np.random.multivariate_normal(mu, sigma, 100)
+print(np.max(X[:, 0]), np.max(X[:, 1]), np.max(X[:, 2]))
+print(np.min(X[:, 0]), np.min(X[:, 1]), np.min(X[:, 2]))
 X = X.dot(A).dot(B).dot(C)
 print(np.max(X[:, 0]), np.max(X[:, 1]), np.max(X[:, 2]))
 print(np.min(X[:, 0]), np.min(X[:, 1]), np.min(X[:, 2]))
@@ -42,13 +43,13 @@ print(np.min(X[:, 0]), np.min(X[:, 1]), np.min(X[:, 2]))
 fig = plot.figure()
 ax = fig.gca(projection='3d')
 ax.scatter(X[:, 0], X[:, 1], X[:, 2])
-ax.set_xlim(-5, 5)
-ax.set_ylim(-5, 5)
-ax.set_zlim(-5, 5)
+ax.set_xlim(-4, 7)
+ax.set_ylim(-4, 7)
+ax.set_zlim(-4, 7)
 # ax.legend()
 # plot.subplot(121)
 plot.show()
-plot.cla()
+# plot.cla()
 n, m = X.shape
 
 # 设置降低到几维
@@ -74,7 +75,7 @@ z = np.dot(u_, np.asarray(img - mean_).T)
 out = np.dot(z.T, np.asarray(u_)) + mean_
 # print(out)
 out = out.astype(np.uint8)
-
+print(psnr(img, out))
 cv2.imshow("haha", out)
 cv2.waitKey(25)
 
