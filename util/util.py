@@ -139,3 +139,22 @@ def EM_lnp(num_of_k, X, mu, pi, sigma):
             sum += pi[j] * norm_2(X[i], mu[j], sigma[j])
         ans += np.log(sum)
     return ans
+def PCA(X, k):
+    n=len(X)
+    mean = np.mean(X, axis=0)
+    X_ = X - mean
+    S = np.dot(X_.T, X_) / n
+    # lambd, u = np.linalg.eig(S)
+    a, b, c = np.linalg.svd(S)
+    if len(b) < len(S):
+        b = b.tolist() + [0] * (len(S) - len(b))
+    return b[:k], c[:k], mean
+
+
+def psnr(img1, img2):
+    mse = np.mean((img1 / 255. - img2 / 255.) ** 2)
+    #为了防止数据过小造成mse变成0，对其单独处理。
+    if mse < 1.0e-10:
+        return 100
+    PIXEL_MAX = 1
+    return 20 * np.log10(PIXEL_MAX / np.sqrt(mse))
